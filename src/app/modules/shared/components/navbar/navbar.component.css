@@ -1,0 +1,120 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+img{
+  width: 70px;
+  height: 70px;
+}
+ /*Declaramos con palabra reservada MEDIA -> Dispositivos pequeños (ej: celular) */
+ @media (min-width:300px) and (max-width:700px){
+  mat-toolbar{
+    background-color: aqua;
+  }
+  #menuInicio{
+    display: none;
+  }
+  #menuProducto{
+    display: none;
+  }
+}
+/* Dispositivos mas grandes (ej: computadora)*/
+@media (min-width:700px){
+  mat-toolbar{
+    background-color: blueviolet;
+  }
+  #menuSecciones{
+    display: none;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.list-group-item img {
+  max-width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  margin-right: 10px;
+}
+
+.list-group-item div {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mat-toolbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.mat-warn {
+  background-color: var(--warn-color);
+  color: var(--text-color);
+}
+.mat-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.mat-menu {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.mat-slide-toggle-thumb {
+  background-color: var(--primary-color);
+}
+.mat-slide-toggle-bar {
+  background-color: var(--accent-color);
+}
+.profile-image {
+  width: 50px;  /* Ajusta el tamaño según el espacio disponible */
+  height: 50px; /* Asegura que sea cuadrado para mantener el círculo */
+  border-radius: 50%; /* Esto hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+  border: 2px solid #fff; /* Opcional: un borde alrededor de la imagen */
+}
+
+
+.red-icon{
+  color: red;
+  
+}
+.button{
+  border-radius:  11px;
+  padding: 10px;
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn.btn-primary {
+  /* Tus estilos personalizados aquí */
+  border: none; /* Ejemplo: quitar bordes */
+  background-color: var(--primary-color); /* Cambiar color de fondo */
+  /* Otros estilos */
+}
+
+.btn.btn-primary:hover {
+  /* Estilos para el estado hover */
+  background-color: var(--input-color); /* Cambiar color al pasar el cursor */
+}
+
+
+.mat-icon {
+  color: var(--text-color); /* Cambia el color del icono */
+}
+
+/* Si deseas cambiar el color en estado hover del botón */
+.custom-button:hover .mat-icon {
+  color: var(--background-footer-color); /* Cambia el color del icono en hover */
+}
+

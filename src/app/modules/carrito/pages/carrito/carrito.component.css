@@ -1,0 +1,121 @@
+.mat-toolbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    color: var(--input-color);
+  }
+  
+  button:hover {
+    background-color: var(--accent-color); /* Cambia al color de acento cuando el cursor está encima */
+    color: var(--text-color);             /* Puedes modificar el color del texto al pasar el cursor */
+  }
+  .mat-warn {
+    background-color: var(--warn-color);
+    color: var(--text-color);
+  }
+  .mat-card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-menu {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-slide-toggle-thumb {
+    background-color: var(--primary-color);
+  }
+  .mat-slide-toggle-bar {
+    background-color: var(--accent-color);
+  }
+  /* Aplica las variables a otros componentes según sea necesario */
+  /* Variables para el tema claro */
+  
+  .col-lg-12{
+    justify-content:center;
+    display:flex;
+  }
+
+  /* Animación para la fila */
+.row {
+  animation-duration: 2.7s;
+  animation-name: animCart;
+  margin: 0; /* Cambiado de 'center' a '0' */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinea las tarjetas al inicio */
+}
+
+/* Clave de animación para el cart */
+@keyframes animCart {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Estilo de las tarjetas */
+.col {
+  flex: 0 0 calc(33.333% - 20px); /* Tres tarjetas por fila con espacio */
+  margin: 10px; /* Espacio entre tarjetas */
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--primary-color);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  display: flex; /* Asegura que el contenido se alinee correctamente */
+  flex-direction: column; /* Permite que los elementos hijos se apilen verticalmente */
+}
+
+/* Animación de las tarjetas sobre el cursor */
+.col:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+/* Define tamaños de las imágenes */
+.card-image {
+  width: 100%;               /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px;            /* Altura fija para todas las imágenes */
+  object-fit: contain;      /* Ajusta la imagen manteniendo su proporción y centrada */
+  display: block;           /* Asegura que la imagen se comporte como un bloque */
+  margin: 0 auto;          /* Centra la imagen horizontalmente */
+  border: none;             /* Quita el borde si se muestra */
+  background-color: var(--background-color); /* Color de fondo opcional */
+}
+
+/* Asegura que la imagen esté centrada verticalmente */
+.mat-card-content {
+  display: flex; /* Alinea el contenido de las tarjetas */
+  flex-direction: column; /* Alinea los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+
+/* Aumenta el tamaño de las tarjetas según sea necesario */
+@media (min-width: 768px) {
+  .mat-card {
+    height: 350px; /* Ajusta la altura como desees */
+  }
+}
+
+/* Espacio entre las tarjetas */
+@media (max-width: 768px) {
+  .col {
+    flex: 0 0 calc(50% - 20px); /* Dos tarjetas en pantallas medianas */
+    max-width: calc(50% - 20px); /* Ajusta el max-width */
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex: 0 0 calc(100% - 20px); /* Una tarjeta en pantallas pequeñas */
+    max-width: calc(100% - 20px); /* Ajusta el max-width */
+  }
+}

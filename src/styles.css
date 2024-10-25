@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Variables para el tema claro */
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.mat-toolbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.mat-warn {
+  background-color: var(--warn-color);
+  color: var(--text-color);
+}
+
+.mat-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.mat-menu {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.mat-slide-toggle-thumb {
+  background-color: var(--primary-color);
+}
+
+.mat-slide-toggle-bar {
+  background-color: var(--accent-color);
+}
+
+/* Aplica las variables a otros componentes según sea necesario */
+
+/* Variables para el tema claro */
+:root {
+  --background-color: rgb(255, 255, 255);
+  --background-footer-color:#38afff; 
+  --text-color: #f7f7f7;
+  --text-title-color:#4d41f1;
+  --primary-color: #00a8db; /* Color frío */
+  --accent-color:#00a8db ;  /* Color cálido */
+  --warn-color: #fc1100;    /* Color cálido */
+  --input-color:#0a0444 ;
+}
+
+/* Variables para el tema oscuro */
+:root.dark-theme {
+  --background-color: rgb(15, 1, 41);
+  --text-title-color:#ffffff;
+  --background-footer-color:#0a0444; 
+  --text-color: #f30b0b;
+  --primary-color: #090541; /* Color frío */
+  --accent-color: #030b4e;  /* Color cálido */
+  --warn-color: #e91e63;    /* Color cálido */
+  --input-color:#ffffff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

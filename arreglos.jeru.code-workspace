@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../arreglos.jeru"
+		},
+		{
+			"path": "../jeru"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "arreglos.jeru"
+	}
+}

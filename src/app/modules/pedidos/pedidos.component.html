@@ -1,0 +1,37 @@
+<h1 class="mt-4 mb-4">Pedidos Realizados <span class="text-danger">&hearts;</span></h1>
+
+<div class="container">
+  <div *ngIf="pedidos.length > 0; else noPedidos">
+    <div *ngFor="let pedido of pedidos" class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title">Pedido realizado por: {{ pedido.usuario.nombre }} {{ pedido.usuario.apellido }}</h3>
+        <h4 class="card-subtitle">Fecha: {{ pedido.fecha | date:'medium' }}</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let item of pedido.productos" class="list-group-item">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img src="{{item.Producto.imagen}}" class="img-fluid rounded" alt="{{item.Producto.nombre}}">
+              </div>
+              <div class="col-md-8">
+                <h4>Producto: {{ item.Producto.nombre }}</h4>
+                <h4>Cantidad: {{ item.Cantidad }}</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="mt-3">
+          <h3 class="text-success">Precio Total: {{ pedido.totalprecio | currency:'ARS':'symbol':'1.0-0':'es-AR' }}</h3>
+        </div>
+        <button (click)="despacharPedido(pedido.id)" class="btn btn-warning mt-3">Despachar Producto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #noPedidos>
+  <div class="alert alert-warning text-center mt-4">
+    <p>No hay pedidos realizados.</p>
+  </div>
+</ng-template>

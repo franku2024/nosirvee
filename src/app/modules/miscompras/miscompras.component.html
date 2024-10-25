@@ -1,0 +1,46 @@
+<h1 class="text-center title-pedidos p-3">🛒 Mis Compras</h1>
+
+<div *ngIf="misPedidos.length === 0" class="no-pedidos">
+  <p>No has realizado compras todavía.</p>
+</div>
+
+<div *ngFor="let pedido of misPedidos" class="pedido-card card mb-4">
+  <div class="pedido-header card-header">
+    <h3>Pedido ID: {{ pedido.id }}</h3>
+  </div>
+  <div class="card-body">
+    <h4><b>
+      Usuario: {{ pedido.usuario.nombre }} {{ pedido.usuario.apellido }}
+    </b></h4>
+    <h4>Fecha de compra: {{ pedido.fecha | date : "short" }}</h4>
+
+    <div class="productos mt-3">
+      <div
+        *ngFor="let item of pedido.productos"
+        class="producto d-flex align-items-center mb-3"
+      >
+        <img
+          [src]="item.Producto.imagen"
+          alt="{{ item.Producto.nombre }}"
+          class="producto-imagen img-fluid rounded"
+        />
+        <div class="producto-info ms-3">
+          <p>Producto: {{ item.Producto.nombre }}</p>
+          <p>Cantidad: {{ item.Cantidad }}</p>
+          <p>
+            Precio Total: ${{
+              item.Producto.precio * item.Cantidad | number : "1.2-2"
+            }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pedido-total mt-3">
+      <p class="fw-bold text-success">
+        TOTAL: ${{ pedido.totalprecio | number : "1.2-2" }}
+      </p>
+      <h4><b>Fecha de Entrega: {{ pedido.fechaEntrega | date : "shortDate" }}</b></h4>
+    </div>
+  </div>
+</div>

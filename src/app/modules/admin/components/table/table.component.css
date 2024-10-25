@@ -1,0 +1,164 @@
+/* Estilo general para la tabla */
+.table {
+    background-color:var(--primary-color); /* Color de fondo */
+}
+
+/* Encabezados de la tabla */
+.table th {
+    background-color:var(--primary-color); /* Color de fondo para encabezados */
+    color: white; /* Color del texto */
+}
+
+/* Filas de la tabla */
+.table tbody tr {
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.table tbody tr:hover {
+    background-color: var(--primary-color); /* Color al pasar el mouse */
+}
+
+/* Botones */
+.btn-outline-warning {
+    border-color: #ffc107; /* Color del borde */
+    color: #ffc107; /* Color del texto */
+}
+.modal-body{
+    background-color:var(--primary-color); /* Color de fondo para encabezados */
+    color: white; /* Color del texto */
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107; /* Color de fondo al pasar el mouse */
+    color: var(--text-color); /* Color del texto al pasar el mouse */
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: var(--text-color);
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: var(--input-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: var(--text-color);
+}
+
+
+
+/* Modal header */
+.modal-header {
+    background-color: var(--primary-color); /* Color de fondo del header del modal */
+    color: var(--text-color); /* Color del texto */
+}
+
+/* Modal footer */
+.modal-footer {
+    background-color: var(--primary-color); /* Color de fondo del footer del modal */
+}
+
+.modal-footer{
+    text-align: center;
+    justify-content: center;
+    }
+
+    /* Estilo para el contenedor del input */
+.input-file-container {
+    background-color: var(--accent-color); /* Color de fondo */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color); /* Color del texto */
+}
+
+/* Estilo para la etiqueta del input */
+.input-file-container label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Estilo para el input de archivo */
+.input-file-container input[type="file"] {
+    display: none; /* Oculta el input nativo */
+}
+
+/* Estilo para el botón personalizado que reemplaza el input nativo */
+.custom-file-upload {
+    border: 2px solid var(--input-color); /* Borde personalizado */
+    background-color: transparent;
+    color: var(--accent-color); /* Color del texto */
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover para el botón personalizado */
+.custom-file-upload:hover {
+    background-color: var(--text-title-color); /* Color de fondo al hacer hover */
+    color: white; /* Color del texto al hacer hover */
+}
+
+/* Estilo para el texto de la imagen cargada */
+.file-name {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+/* Estilo base del select */
+.material-style-select {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Efecto al hacer focus */
+  .material-style-select:focus {
+    border-color: #3f51b5; /* Azul Material */
+    box-shadow: 0 0 4px #3f51b5;
+    outline: none;
+  }
+  
+  /* Placeholder estilo como el label flotante de Material */
+  .material-style-select option[disabled] {
+    color: rgba(0, 0, 0, 0.54); /* Color gris similar a Material */
+  }
+  
+  /* Cambiar el tamaño de las opciones */
+  .material-style-select option {
+    padding: 8px;
+  }
+  
+  /* Estilo de la etiqueta */
+  .form-label {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  /* Hacer que el select sea más grande, estilo Material */
+  .material-style-select {
+    height: 40px;
+  }
+  
+  /* Estilo de las esquinas redondeadas */
+  .material-style-select {
+    border-radius: 4px;
+  }

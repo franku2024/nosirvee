@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton{
+    width: 120px;
+    margin: auto;
+}
+
+.mat-toolbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    color: var(--input-color);
+  }
+  button:hover {
+    background-color: var(--text-title-color); /* Cambia esto por el color que desees al pasar el cursor */
+    color: var(--primary-color);       /* Puedes también modificar el color del texto si lo necesitas */
+    cursor: pointer;                      /* Para mostrar el cursor como una mano */
+  }
+
+  /* Cambiar colores del botón y el ícono */
+button.toggle-password-btn {
+  background-color: var(--primary-color);  /* Fondo del botón del "ojito" */
+  color: var(--input-color);               /* Color del ícono */
+}
+
+button.toggle-password-btn:hover {
+  background-color: var(--accent-color);   /* Cambia fondo al pasar el cursor */
+  color: var(--text-color);                /* Cambia el color del ícono al pasar el cursor */
+}
+
+/* Cambiar colores del input cuando está en focus o tiene valor */
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: var(--primary-color);             /* Cambia el color del label cuando el input está activo */
+}
+
+.mat-form-field-underline {
+  background-color: var(--primary-color);  /* Cambia el color de la línea debajo del input */
+}
+
+.mat-input-element {
+  color: var(--input-color);               /* Color del texto dentro del input */
+}
+
+/* Cambiar el color del hint (el texto debajo del input) */
+.mat-hint {
+  color: var(--text-color);                /* Color del hint */
+}
+  .mat-warn {
+    background-color: var(--warn-color);
+    color: var(--text-color);
+  }
+  .mat-card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-menu {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-slide-toggle-thumb {
+    background-color: var(--primary-color);
+  }
+  .mat-slide-toggle-bar {
+    background-color: var(--accent-color);
+  }
+
+  .material-icons{
+    color:var(--text-title-color)
+  }
+
+  .boton{
+    width: 120px;
+    margin: auto;
+}
+
+.form-check-label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-check-input {
+    width: 18px; /* Aumenta el tamaño del checkbox */
+    height: 18px;
+    border: 2px solid #007bff; /* Cambia el color del borde */
+    border-radius: 3px; /* Esquinas redondeadas */
+   
+    
+}
+  /* Aplica las variables a otros componentes según sea necesario */
+  /* Variables para el tema claro */
+ 

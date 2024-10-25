@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <h1>Inicia Sesión</h1>
+
+        <i class="material-icons" style="font-size: 200px;">account_circle</i>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Ingrese su email:</mat-label>
+            <input [(ngModel)]="usuarioIngresado.email" matInput placeholder="Ej: pepitoperez2022@gmail.com" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Ingrese su contraseña:</mat-label>
+            <input [(ngModel)]="usuarioIngresado.password" matInput [type]="hide ? 'password' : 'text'" #input minlength="6" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-hint align="start">Mínimo:6/{{input.value.length}}</mat-hint>
+        </mat-form-field>
+        <!-- <ngx-recaptcha2 
+         (success)="resolvedCaptcha($event)" 
+           [siteKey]="'6LfjrVYqAAAAAAMY2gs1432dPj5sf-ahEsWZ0ZbS'">
+             </ngx-recaptcha2> -->
+
+             <div>
+              <button (click)="iniciarSesion()" class="btn">Iniciar sesión</button>
+            </div>
+            <div class="spacer"></div> <!-- Spacer con clase CSS -->
+            <div>
+              <button (click)="iniciarSesionConGoogle()" class="btn btn-google"><img src="../../../../../assets/logitos/google-Photoroom.png" alt="Google icon" width="5%"> Iniciar sesión con Google </button>
+            </div>
+          
+          <div class="spacer"></div>
+          <div>
+           <div>
+             <button color="primary" (click)="recuperarContrasena()" class="btn">¿Olvidaste tu contraseña?</button>
+            </div>
+          </div>
+    </div>
+    
+</div>

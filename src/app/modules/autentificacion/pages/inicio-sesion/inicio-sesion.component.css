@@ -1,0 +1,56 @@
+.spacer {
+  height: 10px; /* Ajusta el valor según el espacio que desees */
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton{
+    width: 120px;
+    margin: auto;
+}
+
+.mat-toolbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  button {
+    background-color: var(--primary-color);
+    color: var(--input-color);
+  }
+  button:hover {
+    background-color: var(--text-title-color); /* Cambia esto por el color que desees al pasar el cursor */
+    color: var(--primary-color);       /* Puedes también modificar el color del texto si lo necesitas */
+    cursor: pointer;                      /* Para mostrar el cursor como una mano */
+  }
+
+  .mat-warn {
+    background-color: var(--warn-color);
+    color: var(--text-color);
+  }
+  .mat-card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-menu {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .mat-slide-toggle-thumb {
+    background-color: var(--primary-color);
+  }
+  .mat-slide-toggle-bar {
+    background-color: var(--accent-color);
+  }
+
+  .material-icons{
+    color:var(--text-title-color)
+  }
+
+ 
+  /* Aplica las variables a otros componentes según sea necesario */
+  /* Variables para el tema claro */

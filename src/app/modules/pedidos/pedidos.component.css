@@ -1,0 +1,27 @@
+img {
+  height: 100px;
+  width: 100px;
+}
+
+h1 {
+  color: var(--input-color);
+  text-align: center;
+  justify-content: center;
+}
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.card-header {
+  background-color: var(--background-footer-color);
+  color: var(--input-color);
+}
+.card-body,
+.row,
+.list-group-item {
+  background-color: var(--background-color);
+}
+h4 {
+  color: var(--input-color);
+}
